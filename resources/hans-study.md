@@ -20,13 +20,25 @@ Hans Study is an independent network and security consultant in Ontario, Canada.
 
 ## The book
 
-[The Study Guide to CPCSC Readiness: A Field Reference for Canadian Defense Suppliers](https://hans.study/cpcsc_book/) is Book 3 in The Study Guide series. First edition, revision 1.3, October 1, 2026. 12 chapters, free to read online or download. CC BY-ND 4.0, DOI [10.5281/zenodo.23145960](https://doi.org/10.5281/zenodo.23145960).
+[The Study Guide to CPCSC Readiness: A Field Reference for Canadian Defense Suppliers](https://hans.study/cpcsc_book/) is Book 3 in The Study Guide series. First edition, revision 1.3.2. 12 chapters, free to read online or download. CC BY-ND 4.0. Prefer the concept DOI [10.5281/zenodo.23145960](https://doi.org/10.5281/zenodo.23145960) for citations; the current deposit is [Zenodo record 23171055](https://zenodo.org/records/23171055) (v1.3.2).
 
 - [Read it online](https://hans.study/cpcsc_book/)
 - [Download the PDF](https://hans.study/cpcsc_book/hans-study-the-study-guide-to-cpcsc-readiness.pdf) (61 pages, ISBN 978-1-0680175-2-0)
 - [Sampler PDF](https://hans.study/cpcsc_book/cpcsc-readiness-sampler.pdf)
 - EPUB (ISBN 978-1-0680175-3-7), free on Apple Books, Kobo, Google Play, and Kindle
 - Paperback, 8.5 × 11, 72 pages (ISBN 978-1-0680175-1-3)
+
+### Related identifiers
+
+| Place | ID | URL |
+|---|---|---|
+| Concept DOI | 10.5281/zenodo.23145960 | https://doi.org/10.5281/zenodo.23145960 |
+| Zenodo (v1.3.2) | 23171055 | https://zenodo.org/records/23171055 |
+| Internet Archive | the-study-guide-to-cpcsc-readiness-hans-study | https://archive.org/details/the-study-guide-to-cpcsc-readiness-hans-study |
+| Wikidata (book) | Q141648473 | https://www.wikidata.org/wiki/Q141648473 |
+| Wikidata (author) | Q141043781 | https://www.wikidata.org/wiki/Q141043781 |
+| ORCID | 0009-0000-5322-5033 | https://orcid.org/0009-0000-5322-5033 |
+| This repo | hansstudy/CPCSC | https://github.com/hansstudy/CPCSC |
 
 ## Templates
 
