@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/scripts/validate.py
+      - name: Build the wiki pages
+        run: python3 .github/scripts/build_wiki.py "$RUNNER_TEMP/wiki-build"
+
+  stubbed-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run the endpoint audit against stubbed Windows commands
+        shell: pwsh
+        run: ./scripts/tests/Test-EndpointAudit.ps1
+
+  powershell:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse and analyze
+        shell: pwsh
+        run: |
+          Install-Module PSScriptAnalyzer -Force -Scope CurrentUser
+          foreach ($f in Get-ChildItem scripts -Filter *.ps1) {
+            $errs = $null
+            [System.Management.Automation.Language.Parser]::ParseFile($f.FullName, [ref]$null, [ref]$errs) | Out-Null
+            if ($errs) { $errs | ForEach-Object { Write-Error "$($f.Name): $_" } }
+          }
+          $findings = Invoke-ScriptAnalyzer -Path scripts -Recurse -Severity Error, Warning
+          $findings | Format-Table -AutoSize
+          if ($findings) { exit 1 }
+      - name: Merge sample reports
+        shell: pwsh
+        run: |
+          ./scripts/Merge-CpcscAuditReports.ps1 -ReportPath scripts/samples -OutputPath $env:RUNNER_TEMP/out
+          if (-not (Test-Path $env:RUNNER_TEMP/out/fleet-summary.csv)) { exit 1 }
+      - name: Endpoint audit runs
+        shell: pwsh
+        run: ./scripts/Invoke-CpcscEndpointAudit.ps1 -OutputPath $env:RUNNER_TEMP/audit

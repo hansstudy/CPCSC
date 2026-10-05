@@ -1,0 +1,39 @@
+name: Suggest a resource
+description: Add a link, tool, template, or reference to this CPCSC resource
+title: "Resource: "
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The page or file you'd like added
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What it's called
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Where it belongs
+      options:
+        - Government
+        - Standards and frameworks
+        - CMMC and the US program
+        - Tools and baselines
+        - Templates
+        - Glossary
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What it covers, and which requirements it helps with
+      description: One or two lines is plenty
+    validations:
+      required: true

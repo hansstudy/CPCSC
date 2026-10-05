@@ -1,0 +1,69 @@
+name: Publish wiki
+
+# Builds the wiki from the repository's Markdown and pushes it to the wiki repo.
+# One-time setup: enable Wikis in Settings, then create any first page so the wiki repo exists.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - controls/**
+      - resources/**
+      - scripts/README.md
+      - templates/README.md
+      - .github/scripts/build_wiki.py
+      - .github/workflows/wiki.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wiki
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check that the wiki exists
+        id: wiki
+        env:
+          TOKEN: ${{ github.token }}
+        run: |
+          if git ls-remote "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.wiki.git" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::The wiki isn't initialized yet. Enable Wikis in Settings and create a first page, then re-run this workflow."
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build wiki pages
+        if: steps.wiki.outputs.exists == 'true'
+        run: python3 .github/scripts/build_wiki.py "$RUNNER_TEMP/wiki-build"
+
+      - name: Check out the wiki
+        if: steps.wiki.outputs.exists == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}.wiki
+          path: wiki
+
+      - name: Publish
+        if: steps.wiki.outputs.exists == 'true'
+        run: |
+          find wiki -mindepth 1 -maxdepth 1 -not -name .git -exec rm -rf {} +
+          cp -a "$RUNNER_TEMP/wiki-build/." wiki/
+          cd wiki
+          git config user.name "Hans Study"
+          git config user.email "git@hans.study"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Wiki is already up to date."
+          else
+            git commit -m "Sync wiki from the repository"
+            git push
+          fi

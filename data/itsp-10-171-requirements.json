@@ -1,0 +1,700 @@
+{
+  "standard": "ITSP.10.171, second release, October 28, 2025",
+  "identifiers": "Identical to NIST SP 800-171 Rev 3 identifiers; 03.14.09 is the Canadian addition with no NIST equivalent",
+  "level1_source": "PSPC CPCSC Level 1 criteria",
+  "last_verified": "2026-10-05",
+  "total": 98,
+  "level1": 13,
+  "families": [
+    {
+      "code": "01",
+      "name": "Access Control",
+      "requirements": [
+        {
+          "id": "03.01.01",
+          "nist_800_171_r3": "03.01.01",
+          "title": "Account management",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.01.02",
+          "nist_800_171_r3": "03.01.02",
+          "title": "Access enforcement",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.01.03",
+          "nist_800_171_r3": "03.01.03",
+          "title": "Information flow enforcement",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.04",
+          "nist_800_171_r3": "03.01.04",
+          "title": "Separation of duties",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.05",
+          "nist_800_171_r3": "03.01.05",
+          "title": "Least privilege",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.06",
+          "nist_800_171_r3": "03.01.06",
+          "title": "Least privilege (privileged accounts)",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.07",
+          "nist_800_171_r3": "03.01.07",
+          "title": "Least privilege (privileged functions)",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.08",
+          "nist_800_171_r3": "03.01.08",
+          "title": "Unsuccessful logon attempts",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.09",
+          "nist_800_171_r3": "03.01.09",
+          "title": "System use notification",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.10",
+          "nist_800_171_r3": "03.01.10",
+          "title": "Device lock",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.11",
+          "nist_800_171_r3": "03.01.11",
+          "title": "Session termination",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.12",
+          "nist_800_171_r3": "03.01.12",
+          "title": "Remote access",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.16",
+          "nist_800_171_r3": "03.01.16",
+          "title": "Wireless access",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.18",
+          "nist_800_171_r3": "03.01.18",
+          "title": "Access control for mobile devices",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.01.20",
+          "nist_800_171_r3": "03.01.20",
+          "title": "Use of external systems",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.01.22",
+          "nist_800_171_r3": "03.01.22",
+          "title": "Publicly accessible content",
+          "cpcsc_level_1": true
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "name": "Awareness and Training",
+      "requirements": [
+        {
+          "id": "03.02.01",
+          "nist_800_171_r3": "03.02.01",
+          "title": "Literacy training and awareness",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.02.02",
+          "nist_800_171_r3": "03.02.02",
+          "title": "Role-based training",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "name": "Audit and Accountability",
+      "requirements": [
+        {
+          "id": "03.03.01",
+          "nist_800_171_r3": "03.03.01",
+          "title": "Event logging",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.03.02",
+          "nist_800_171_r3": "03.03.02",
+          "title": "Audit record content",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.03.03",
+          "nist_800_171_r3": "03.03.03",
+          "title": "Audit record generation",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.03.04",
+          "nist_800_171_r3": "03.03.04",
+          "title": "Response to audit logging process failures",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.03.05",
+          "nist_800_171_r3": "03.03.05",
+          "title": "Audit record review, analysis, and reporting",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.03.06",
+          "nist_800_171_r3": "03.03.06",
+          "title": "Audit record reduction and report generation",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.03.07",
+          "nist_800_171_r3": "03.03.07",
+          "title": "Time stamps",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.03.08",
+          "nist_800_171_r3": "03.03.08",
+          "title": "Protection of audit information",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "04",
+      "name": "Configuration Management",
+      "requirements": [
+        {
+          "id": "03.04.01",
+          "nist_800_171_r3": "03.04.01",
+          "title": "Baseline configuration",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.02",
+          "nist_800_171_r3": "03.04.02",
+          "title": "Configuration settings",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.03",
+          "nist_800_171_r3": "03.04.03",
+          "title": "Configuration change control",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.04",
+          "nist_800_171_r3": "03.04.04",
+          "title": "Impact analyses",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.05",
+          "nist_800_171_r3": "03.04.05",
+          "title": "Access restrictions for change",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.06",
+          "nist_800_171_r3": "03.04.06",
+          "title": "Least functionality",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.08",
+          "nist_800_171_r3": "03.04.08",
+          "title": "Authorized software (allow by exception)",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.10",
+          "nist_800_171_r3": "03.04.10",
+          "title": "System component inventory",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.11",
+          "nist_800_171_r3": "03.04.11",
+          "title": "Information location",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.04.12",
+          "nist_800_171_r3": "03.04.12",
+          "title": "System and component configuration for high-risk areas",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "05",
+      "name": "Identification and Authentication",
+      "requirements": [
+        {
+          "id": "03.05.01",
+          "nist_800_171_r3": "03.05.01",
+          "title": "User identification, authentication, and re-authentication",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.05.02",
+          "nist_800_171_r3": "03.05.02",
+          "title": "Device identification and authentication",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.05.03",
+          "nist_800_171_r3": "03.05.03",
+          "title": "Multi-factor authentication",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.05.04",
+          "nist_800_171_r3": "03.05.04",
+          "title": "Replay-resistant authentication",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.05.05",
+          "nist_800_171_r3": "03.05.05",
+          "title": "Identifier management",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.05.07",
+          "nist_800_171_r3": "03.05.07",
+          "title": "Password management",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.05.11",
+          "nist_800_171_r3": "03.05.11",
+          "title": "Authentication feedback",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.05.12",
+          "nist_800_171_r3": "03.05.12",
+          "title": "Authenticator management",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "06",
+      "name": "Incident Response",
+      "requirements": [
+        {
+          "id": "03.06.01",
+          "nist_800_171_r3": "03.06.01",
+          "title": "Incident handling",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.06.02",
+          "nist_800_171_r3": "03.06.02",
+          "title": "Incident monitoring, reporting, and response assistance",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.06.03",
+          "nist_800_171_r3": "03.06.03",
+          "title": "Incident response testing",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.06.04",
+          "nist_800_171_r3": "03.06.04",
+          "title": "Incident response training",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.06.05",
+          "nist_800_171_r3": "03.06.05",
+          "title": "Incident response plan",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "name": "Maintenance",
+      "requirements": [
+        {
+          "id": "03.07.04",
+          "nist_800_171_r3": "03.07.04",
+          "title": "Maintenance tools",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.07.05",
+          "nist_800_171_r3": "03.07.05",
+          "title": "Non-local maintenance",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.07.06",
+          "nist_800_171_r3": "03.07.06",
+          "title": "Maintenance personnel",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "08",
+      "name": "Media Protection",
+      "requirements": [
+        {
+          "id": "03.08.01",
+          "nist_800_171_r3": "03.08.01",
+          "title": "Media storage",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.08.02",
+          "nist_800_171_r3": "03.08.02",
+          "title": "Media access",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.08.03",
+          "nist_800_171_r3": "03.08.03",
+          "title": "Media sanitization",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.08.04",
+          "nist_800_171_r3": "03.08.04",
+          "title": "Media marking",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.08.05",
+          "nist_800_171_r3": "03.08.05",
+          "title": "Media transport",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.08.07",
+          "nist_800_171_r3": "03.08.07",
+          "title": "Media use",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.08.09",
+          "nist_800_171_r3": "03.08.09",
+          "title": "System backup (cryptographic protection)",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "09",
+      "name": "Personnel Security",
+      "requirements": [
+        {
+          "id": "03.09.01",
+          "nist_800_171_r3": "03.09.01",
+          "title": "Personnel screening",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.09.02",
+          "nist_800_171_r3": "03.09.02",
+          "title": "Personnel termination and transfer",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "name": "Physical Protection",
+      "requirements": [
+        {
+          "id": "03.10.01",
+          "nist_800_171_r3": "03.10.01",
+          "title": "Physical access authorizations",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.10.02",
+          "nist_800_171_r3": "03.10.02",
+          "title": "Monitoring physical access",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.10.06",
+          "nist_800_171_r3": "03.10.06",
+          "title": "Alternate work site",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.10.07",
+          "nist_800_171_r3": "03.10.07",
+          "title": "Physical access control",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.10.08",
+          "nist_800_171_r3": "03.10.08",
+          "title": "Access control for transmission",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "name": "Risk Assessment",
+      "requirements": [
+        {
+          "id": "03.11.01",
+          "nist_800_171_r3": "03.11.01",
+          "title": "Risk assessment",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.11.02",
+          "nist_800_171_r3": "03.11.02",
+          "title": "Vulnerability monitoring and scanning",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.11.04",
+          "nist_800_171_r3": "03.11.04",
+          "title": "Risk response",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "name": "Security Assessment and Monitoring",
+      "requirements": [
+        {
+          "id": "03.12.01",
+          "nist_800_171_r3": "03.12.01",
+          "title": "Security assessment",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.12.02",
+          "nist_800_171_r3": "03.12.02",
+          "title": "Plan of action and milestones",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.12.03",
+          "nist_800_171_r3": "03.12.03",
+          "title": "Continuous monitoring",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.12.05",
+          "nist_800_171_r3": "03.12.05",
+          "title": "Information exchange",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "name": "System and Communications Protection",
+      "requirements": [
+        {
+          "id": "03.13.01",
+          "nist_800_171_r3": "03.13.01",
+          "title": "Boundary protection",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.13.04",
+          "nist_800_171_r3": "03.13.04",
+          "title": "Information in shared system resources",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.13.06",
+          "nist_800_171_r3": "03.13.06",
+          "title": "Network communications, deny by default, allow by exception",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.13.08",
+          "nist_800_171_r3": "03.13.08",
+          "title": "Transmission and storage confidentiality",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.13.09",
+          "nist_800_171_r3": "03.13.09",
+          "title": "Network disconnect",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.13.10",
+          "nist_800_171_r3": "03.13.10",
+          "title": "Cryptographic key establishment and management",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.13.11",
+          "nist_800_171_r3": "03.13.11",
+          "title": "Cryptographic protection",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.13.12",
+          "nist_800_171_r3": "03.13.12",
+          "title": "Collaborative computing devices and applications",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.13.13",
+          "nist_800_171_r3": "03.13.13",
+          "title": "Mobile code",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.13.15",
+          "nist_800_171_r3": "03.13.15",
+          "title": "Session authenticity",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "name": "System and Information Integrity",
+      "requirements": [
+        {
+          "id": "03.14.01",
+          "nist_800_171_r3": "03.14.01",
+          "title": "Flaw remediation",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.14.02",
+          "nist_800_171_r3": "03.14.02",
+          "title": "Malicious code protection",
+          "cpcsc_level_1": true
+        },
+        {
+          "id": "03.14.03",
+          "nist_800_171_r3": "03.14.03",
+          "title": "Security alerts, advisories, and directives",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.14.06",
+          "nist_800_171_r3": "03.14.06",
+          "title": "System monitoring",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.14.08",
+          "nist_800_171_r3": "03.14.08",
+          "title": "Information management and retention",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.14.09",
+          "nist_800_171_r3": null,
+          "title": "Dedicated administration workstation",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "name": "Planning",
+      "requirements": [
+        {
+          "id": "03.15.01",
+          "nist_800_171_r3": "03.15.01",
+          "title": "Policy and procedures",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.15.02",
+          "nist_800_171_r3": "03.15.02",
+          "title": "System security plan",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.15.03",
+          "nist_800_171_r3": "03.15.03",
+          "title": "Rules of behaviour",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "name": "System and Services Acquisition",
+      "requirements": [
+        {
+          "id": "03.16.01",
+          "nist_800_171_r3": "03.16.01",
+          "title": "Security engineering principles",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.16.02",
+          "nist_800_171_r3": "03.16.02",
+          "title": "Unsupported system components",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.16.03",
+          "nist_800_171_r3": "03.16.03",
+          "title": "External system services",
+          "cpcsc_level_1": false
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "name": "Supply Chain Risk Management",
+      "requirements": [
+        {
+          "id": "03.17.01",
+          "nist_800_171_r3": "03.17.01",
+          "title": "Supply chain risk management plan",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.17.02",
+          "nist_800_171_r3": "03.17.02",
+          "title": "Acquisition strategies, tools, and methods",
+          "cpcsc_level_1": false
+        },
+        {
+          "id": "03.17.03",
+          "nist_800_171_r3": "03.17.03",
+          "title": "Supply chain requirements and processes",
+          "cpcsc_level_1": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Audit output contains host and account details; never commit it
+reports/
+*.html
+!docs/**/*.html
+cpcsc-audit-*.json
+cpcsc-audit-*.csv
+!scripts/samples/cpcsc-audit-SAMPLE-*.json
+fleet-summary.*
+fleet-matrix.csv

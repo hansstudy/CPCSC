@@ -1,0 +1,30 @@
+cff-version: 2.0.0
+message: "If you use this toolkit, please cite it as below."
+title: "The Ultimate CPCSC (ITSP.10.171) Resource: controls, audit scripts, templates, and resources"
+type: software
+abstract: "The Ultimate CPCSC (ITSP.10.171) Resource: templates, controls explained, tools, scripts, and getting ready for the Canadian Program for Cyber Security Certification."
+authors:
+  - name: "Hans Study"
+    website: "https://hans.study"
+    orcid: "https://orcid.org/0009-0000-5322-5033"
+repository-code: "https://github.com/hansstudy/CPCSC"
+url: "https://hans.study/cpcsc/"
+license: MIT
+version: 2.0.0
+date-released: 2026-10-05
+keywords:
+  - CPCSC
+  - ITSP.10.171
+  - NIST SP 800-171
+  - CMMC
+  - cyber security certification
+references:
+  - type: book
+    title: "The Study Guide to CPCSC Readiness: A Field Reference for Canadian Defense Suppliers"
+    authors:
+      - name: "Hans Study"
+    edition: "First edition, revision 1.3"
+    year: 2026
+    doi: "10.5281/zenodo.23145960"
+    isbn: "978-1-0680175-2-0"
+    url: "https://hans.study/cpcsc_book/"
