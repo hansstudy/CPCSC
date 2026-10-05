@@ -59,6 +59,14 @@ Use the values written in your system security plan. The report records which va
 
 Statuses: `PASS`, `FAIL`, `WARN` (review it), `MANUAL` (needs evidence a script can't collect), `ERROR` (couldn't read; usually needs elevation).
 
+
+
+## Apply baselines (separate repo)
+
+These scripts are **read-only audits**. They change nothing on the machine.
+
+To apply Windows hardening baselines for CMMC Level 2 and CPCSC / ITSP.10.171 readiness (restore point, logging, every control cited), use [`CMMC-CPCSC-ITSP10171.ps1`](https://github.com/hansstudy/windows-hardening-scripts/blob/main/CMMC-CPCSC-ITSP10171.ps1) in [hansstudy/windows-hardening-scripts](https://github.com/hansstudy/windows-hardening-scripts). Audit here; apply there.
+
 ## What it can't see
 
 Policies, training, physical security, MFA on cloud and VPN services, network firewalls, central logging, where administration actually happens, and anything on non-Windows systems. A clean report is evidence for one machine's settings. It isn't a CPCSC attestation, a certification, or an assessment.

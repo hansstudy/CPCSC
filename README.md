@@ -133,13 +133,15 @@ The full comparison is in [CMMC and the US program](resources/cmmc-and-us.md).
 6. Record the result and expiry date in CanadaBuys.
 7. Re-run the assessment when the environment changes, and again before the expiry date.
 
-If Level 2 is ahead of you, scoping comes before anything you buy, because where Specified Information lives decides what you pay. To check the technical side of a Windows machine, run the [audit script](scripts/README.md).
+If Level 2 is ahead of you, scoping comes before anything you buy, because where Specified Information lives decides what you pay. To check the technical side of a Windows machine, run the [audit script](scripts/README.md). To apply Windows hardening baselines for CMMC and CPCSC readiness, use [`CMMC-CPCSC-ITSP10171.ps1`](https://github.com/hansstudy/windows-hardening-scripts/blob/main/CMMC-CPCSC-ITSP10171.ps1) in the [windows-hardening-scripts](https://github.com/hansstudy/windows-hardening-scripts) repo.
 
 ## The book
 
-The Study Guide to CPCSC Readiness: A Field Reference for Canadian Defense Suppliers is Book 3 in The Study Guide series by Hans Study. First edition, revision 1.3, October 1, 2026. 12 chapters, free to read online or download, DOI [10.5281/zenodo.23145960](https://doi.org/10.5281/zenodo.23145960), CC BY-ND 4.0.
+The Study Guide to CPCSC Readiness: A Field Reference for Canadian Defense Suppliers is Book 3 in The Study Guide series by Hans Study. First edition, revision 1.3.2, October 2026. 12 chapters, free to read online or download, DOI [10.5281/zenodo.23145960](https://doi.org/10.5281/zenodo.23145960), CC BY-ND 4.0.
 
-[Read it online](https://hans.study/cpcsc_book/) · [Download the PDF](https://hans.study/cpcsc_book/hans-study-the-study-guide-to-cpcsc-readiness.pdf) · [Sampler PDF](https://hans.study/cpcsc_book/cpcsc-readiness-sampler.pdf) · [Templates](https://hans.study/cpcsc/templates/) · [Policy builder](https://hans.study/tools/policy-builder/)
+[Site copy](https://hans.study/cpcsc_book/) · [Zenodo v1.3.2](https://zenodo.org/records/23171055) · DOI [10.5281/zenodo.23145960](https://doi.org/10.5281/zenodo.23145960) · [Internet Archive](https://archive.org/details/the-study-guide-to-cpcsc-readiness-hans-study) · [Wikidata Q141648473](https://www.wikidata.org/wiki/Q141648473)
+
+Also: [Download the PDF](https://hans.study/cpcsc_book/hans-study-the-study-guide-to-cpcsc-readiness.pdf) · [Sampler PDF](https://hans.study/cpcsc_book/cpcsc-readiness-sampler.pdf) · [Templates](https://hans.study/cpcsc/templates/) · [Policy builder](https://hans.study/tools/policy-builder/)
 
 ## Primary sources
 

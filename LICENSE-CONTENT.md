@@ -8,7 +8,7 @@ You may share and adapt this material in any medium or format, for any purpose, 
 including by an MSP for a client, provided you give appropriate credit, link to the licence, and indicate if
 changes were made. Keep the credit "Hans Study, hans.study" and the licence with every copy.
 
-Suggested attribution: *The Ultimate CPCSC (ITSP.10.171) Resource, by Hans Study, hans.study/cpcsc, licensed CC BY 4.0.*
+Suggested attribution: *CPCSC and ITSP.10.171 resource hub, by Hans Study, hans.study/cpcsc, licensed CC BY 4.0.*
 
 Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
 
