@@ -26,6 +26,19 @@ It's the working companion to [The Study Guide to CPCSC Readiness](https://hans.
 | [`templates/`](templates/) | A [gap register](templates/gap-register.csv) with a row per requirement |
 | [`data/`](data/) | The requirements and the Level 1 crosswalk as JSON and CSV |
 
+## On hans.study
+
+Each page below is the reader-friendly version of what's in this repo, with a last-verified date.
+
+| Page | What it answers |
+|---|---|
+| [Does it apply to you?](https://hans.study/cpcsc/does-it-apply/) | Whether your contracts and data bring you into the program |
+| [Level 1](https://hans.study/cpcsc/level-1/) and [Level 2](https://hans.study/cpcsc/level-2/) | What each level asks, who assesses it, and when |
+| [The 98 requirements](https://hans.study/cpcsc/requirements/) | Every ITSP.10.171 requirement by family, with a plain reading |
+| [CPCSC vs CMMC](https://hans.study/cpcsc/vs-cmmc/) | How the two programs differ and where they overlap |
+| [For MSPs and integrators](https://hans.study/cpcsc/msps-and-integrators/) | Responsibility, evidence, and remote access when a third party runs the systems |
+| [Glossary](https://hans.study/cpcsc/glossary/) and [FAQ](https://hans.study/cpcsc/faq/) | Terms and common questions |
+
 ## Where the program stands
 
 Last verified October 5, 2026, against PSPC's program overview (revised September 29, 2026), its Level 1 guidance, and the Cyber Centre's ITSP.10.171.
