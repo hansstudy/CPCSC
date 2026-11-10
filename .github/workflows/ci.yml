@@ -37,7 +37,10 @@ jobs:
             [System.Management.Automation.Language.Parser]::ParseFile($f.FullName, [ref]$null, [ref]$errs) | Out-Null
             if ($errs) { $errs | ForEach-Object { Write-Error "$($f.Name): $_" } }
           }
-          $findings = Invoke-ScriptAnalyzer -Path scripts -Recurse -Severity Error, Warning
+          # The shipped scripts only; scripts/tests holds stubs that intentionally break some style rules.
+          $findings = foreach ($f in Get-ChildItem scripts -Filter *.ps1) {
+            Invoke-ScriptAnalyzer -Path $f.FullName -Severity Error, Warning
+          }
           $findings | Format-Table -AutoSize
           if ($findings) { exit 1 }
       - name: Merge sample reports
